@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.31">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
 
   <title>software.carpintery.shell.nestor.github.io</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -94,7 +94,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -193,11 +193,24 @@
     <div class="slides">
 
 
+<section>
 <section id="the-unix-shell" class="title-slide slide level1 center">
 <h1>The Unix Shell</h1>
-<p><a href="https://4turesearchdata-carpentries.github.io/2025-05-19-tudelft/">SWC @ University of Twente (General information)</a></p>
-<p>May 19 2025, 09:00-14:00 CEST</p>
+<p><a href="https://4turesearchdata-carpentries.github.io/2025-11-17-tudelft-SWC/">SWC @ University of Twente (General information)</a></p>
+<p>Nov 17 2025, 09:00-14:00 CEST</p>
 <p>Néstor DelaPaz-Ruíz</p>
+</section>
+<section id="overall-picture" class="slide level2">
+<h2>Overall picture</h2>
+<div class="video">
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/s3JldKoA0zw" allowfullscreen="">
+</iframe>
+</div>
+<p>Example: Computational usability and reproducibility</p>
+</section></section>
+<section id="banner---publishing-code-as-open-source" class="title-slide slide level1 center">
+<h1><a href="https://universiteittwente.sharepoint.com/:b:/s/Researchsoftwarepolicy/IQDQgAO2GtWdRqNyk-YT6ATbARTDlqXsaXAIGd6sJAHNe4I?e=LXlWwa">Banner - Publishing code as open-source</a></h1>
+<p>Please consider providing feedback (UT credentials required)</p>
 </section>
 
 <section id="credits" class="title-slide slide level1 center">
@@ -270,7 +283,7 @@
 <section id="ls" class="slide level2">
 <h2><code>ls</code></h2>
 <p>The first command we will learn is <code>ls</code>, which <strong>lists</strong> the content of your current directory (we will come back to this later):</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="fu">ls</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>Desktop     Downloads   Movies      Pictures
 Documents   Library     Music       Public</code></pre>
 </section>
@@ -341,7 +354,7 @@ Documents   Library     Music       Public</code></pre>
 <li><code>*</code> indicates an executable</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="clear-the-terminal" class="slide level2">
 <h2>Clear the terminal</h2>
@@ -350,12 +363,12 @@ Documents   Library     Music       Public</code></pre>
 <section id="help" class="slide level2">
 <h2>Help</h2>
 <p>Get a help menu by adding <code>--help</code>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ls</span> <span class="at">--help</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">ls</span> <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="help-1" class="slide level2">
 <h2>Help</h2>
 <p>Or, add <code>man</code> in front of the command:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">man</span> ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">man</span> ls</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="challenge-ls" class="slide level2 smaller">
 <h2>Challenge: <code>ls</code></h2>
@@ -370,18 +383,18 @@ Documents   Library     Music       Public</code></pre>
 </section>
 <section id="exploring-other-directories" class="slide level2">
 <h2>Exploring other directories</h2>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">ls</span> <span class="at">-F</span> Desktop</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">ls</span> <span class="at">-F</span> Desktop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="move-into-other-directories-with-cd" class="slide level2">
 <h2>Move into other directories with <code>cd</code></h2>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a></a><span class="bu">cd</span> Desktop</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a></a><span class="bu">cd</span> Desktop</span>
 <span id="cb10-2"><a></a><span class="bu">cd</span> shell-lesson-data</span>
-<span id="cb10-3"><a></a><span class="bu">cd</span> exercise-data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-3"><a></a><span class="bu">cd</span> exercise-data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="shortcuts-for-moving-.." class="slide level2">
 <h2>Shortcuts for moving: <code>..</code></h2>
 <p><code>..</code> takes you one directory higher</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="bu">cd</span> ..</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="bu">cd</span> ..</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="shortcuts-for-moving-..-1" class="slide level2">
 <h2>Shortcuts for moving: <code>..</code></h2>
@@ -431,8 +444,8 @@ Documents   Library     Music       Public</code></pre>
 <h2>Tab completion</h2>
 <p>The shell will finish typing the names of files and folders for you when you press the tab key</p>
 <p>Try it from <code>~/Desktop/shell-lesson-data/</code></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">ls</span> north-pacific-gyre/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a><span class="fu">ls</span> north-pacific-gyre/goo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">ls</span> north-pacific-gyre/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a><span class="fu">ls</span> north-pacific-gyre/goo</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(press the tab key twice to see what files start with <code>goo</code>)</p>
 </section></section>
 <section>
@@ -453,14 +466,14 @@ Documents   Library     Music       Public</code></pre>
 <li><p>Make sure we are in <code>shell-lesson-data</code>, then enter <code>exercise-data/writing</code></p></li>
 <li><p>Have a look around, then create a new directory called <code>thesis</code>:</p></li>
 </ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="fu">mkdir</span> thesis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="fu">mkdir</span> thesis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="make-a-new-directory-with-mkdir-1" class="slide level2">
 <h2>Make a new directory with <code>mkdir</code></h2>
 <p>You can create a nested directory using <code>-p</code></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="fu">mkdir</span> <span class="at">-p</span> ../project/data ../project/results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="fu">mkdir</span> <span class="at">-p</span> ../project/data ../project/results</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Check what you did (<code>-R</code> is the option to <code>ls</code> that will list all nested subdirectories within a directory):</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="fu">ls</span> <span class="at">-FR</span> ../project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="fu">ls</span> <span class="at">-FR</span> ../project</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="best-practices-names-for-files-and-directories" class="slide level2">
 <h2>Best practices: names for files and directories</h2>
@@ -473,8 +486,8 @@ Documents   Library     Music       Public</code></pre>
 <section id="create-a-text-file" class="slide level2">
 <h2>Create a text file</h2>
 <p><code>nano</code> is a text editor program. It will create a file and open it for editing.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a></a><span class="bu">cd</span> thesis</span>
-<span id="cb17-2"><a></a><span class="fu">nano</span> draft.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a></a><span class="bu">cd</span> thesis</span>
+<span id="cb17-2"><a></a><span class="fu">nano</span> draft.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2">
 
@@ -483,11 +496,11 @@ Documents   Library     Music       Public</code></pre>
 </section>
 <section id="create-a-text-file-with-touch" class="slide level2">
 <h2>Create a text file with <code>touch</code></h2>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="fu">touch</span> my_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="fu">touch</span> my_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="delete-a-file-with-rm" class="slide level2">
 <h2>Delete a file with <code>rm</code></h2>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="fu">rm</span> my_file.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="fu">rm</span> my_file.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><code>rm</code> is forever! (no recycle bin). <strong>Be very careful</strong> when you use it.</li>
 </ul>
@@ -495,9 +508,9 @@ Documents   Library     Music       Public</code></pre>
 <section id="move-or-rename-files-and-folders-with-mv" class="slide level2">
 <h2>Move or rename files and folders with <code>mv</code></h2>
 <p>Enter <code>shell-lesson-data/exercise-data/writing</code>:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="bu">cd</span> ~/Desktop/shell-lesson-data/exercise-data/writing</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="bu">cd</span> ~/Desktop/shell-lesson-data/exercise-data/writing</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Let’s rename <code>draft.txt</code>:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="fu">mv</span> thesis/draft.txt thesis/quotes.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="fu">mv</span> thesis/draft.txt thesis/quotes.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(check the results with <code>ls</code>)</p>
 </section>
 <section id="move-or-rename-files-and-folders-with-mv-1" class="slide level2">
@@ -506,7 +519,7 @@ Documents   Library     Music       Public</code></pre>
 <li>Like <code>rm</code>, there is no “undo” button for <code>mv</code>: it will over-write any file with the same name, so <strong>use carefully!</strong></li>
 </ul>
 <p>Let’s move <code>quotes.txt</code> into our current directory:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="fu">mv</span> thesis/quotes.txt .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="fu">mv</span> thesis/quotes.txt .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Check <code>ls thesis</code></p>
 </section>
 <section id="copy-files-and-folders-with-cp" class="slide level2">
@@ -514,15 +527,15 @@ Documents   Library     Music       Public</code></pre>
 <ul>
 <li><code>cp</code> is similar to <code>mv</code>, but copies instead of moves</li>
 </ul>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="fu">cp</span> quotes.txt thesis/quotations.txt</span>
-<span id="cb23-2"><a></a><span class="fu">ls</span> quotes.txt thesis/quotations.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="fu">cp</span> quotes.txt thesis/quotations.txt</span>
+<span id="cb23-2"><a></a><span class="fu">ls</span> quotes.txt thesis/quotations.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="copy-files-and-folders-with-cp-1" class="slide level2">
 <h2>Copy files and folders with <code>cp</code></h2>
 <ul>
 <li>Note that you can’t just <code>cp</code> a folder:</li>
 </ul>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="fu">cp</span> thesis thesis_backup</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="fu">cp</span> thesis thesis_backup</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>cp: -r not specified; omitting directory 'thesis'</code></pre>
 </section>
 <section id="copy-files-and-folders-with-cp-2" class="slide level2">
@@ -530,14 +543,14 @@ Documents   Library     Music       Public</code></pre>
 <ul>
 <li>To copy a folder and all its contents, use the <code>-r</code> (<strong>r</strong>ecursive) option</li>
 </ul>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="fu">cp</span> <span class="at">-r</span> thesis thesis_backup</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="fu">cp</span> <span class="at">-r</span> thesis thesis_backup</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="delete-folders-with-rm--r" class="slide level2">
 <h2>Delete folders with <code>rm -r</code></h2>
 <ul>
 <li>Similar to using <code>-r</code> for <code>cp</code>, you need <code>-r</code> to delete a folder:</li>
 </ul>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a></a><span class="fu">rm</span> <span class="at">-r</span> thesis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a></a><span class="fu">rm</span> <span class="at">-r</span> thesis</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Again, <strong>be careful!!</strong></li>
 </ul>
@@ -550,8 +563,8 @@ Documents   Library     Music       Public</code></pre>
 <li>Let’s test this in <code>shell-lesson-data/exercise-data</code>:</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="fu">mkdir</span> backup</span>
-<span id="cb28-2"><a></a><span class="fu">cp</span> creatures/minotaur.dat creatures/unicorn.dat backup/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="fu">mkdir</span> backup</span>
+<span id="cb28-2"><a></a><span class="fu">cp</span> creatures/minotaur.dat creatures/unicorn.dat backup/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="using-wildcards-for-accessing-multiple-files-at-once" class="slide level2">
 <h2>Using wildcards for accessing multiple files at once</h2>
@@ -604,13 +617,13 @@ Documents   Library     Music       Public</code></pre>
 <section id="challenge-organizing" class="slide level2 smaller">
 <h2>Challenge: Organizing</h2>
 <p>Jamie is working on a project, and she sees that her files aren’t very well organized:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span>
-<span id="cb30-2"><a></a><span class="ex">analyzed/</span>  fructose.dat    raw/   sucrose.dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span>
+<span id="cb30-2"><a></a><span class="ex">analyzed/</span>  fructose.dat    raw/   sucrose.dat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>fructose.dat</code> and <code>sucrose.dat</code> files contain output from her data analysis. <strong>What command(s) covered in this lesson does she need to run so that the commands below will produce the output shown?</strong></p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span>
-<span id="cb31-2"><a></a><span class="ex">analyzed/</span>   raw/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a></a><span class="ex">$</span> ls analyzed</span>
-<span id="cb32-2"><a></a><span class="ex">fructose.dat</span>    sucrose.dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb31"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span>
+<span id="cb31-2"><a></a><span class="ex">analyzed/</span>   raw/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a></a><span class="ex">$</span> ls analyzed</span>
+<span id="cb32-2"><a></a><span class="ex">fructose.dat</span>    sucrose.dat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="challenge-reproduce-a-file-structure" class="slide level2 smaller">
 <h2>Challenge: Reproduce a file structure</h2>
@@ -641,8 +654,8 @@ Documents   Library     Music       Public</code></pre>
 <li><p>Nelle needs to determine the <code>pdb</code> file <strong>with the fewest lines of text</strong> in the <code>shell-lesson-data/exercise-data/alkanes</code> directory.</p></li>
 <li><p>She can do this with <code>wc</code>, which counts text in a file:</p></li>
 </ul>
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a></a><span class="ex">$</span> wc cubane.pdb</span>
-<span id="cb34-2"><a></a><span class="ex">20</span>  156 1158 cubane.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a></a><span class="ex">$</span> wc cubane.pdb</span>
+<span id="cb34-2"><a></a><span class="ex">20</span>  156 1158 cubane.pdb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>The output shows number of lines, words, and characters</li>
 </ul>
@@ -650,30 +663,30 @@ Documents   Library     Music       Public</code></pre>
 <section id="use-a-wildcard-to-apply-wc-to-all-files" class="slide level2">
 <h2>Use a wildcard to apply <code>wc</code> to all files</h2>
 <p>Check the number of lines of text in all <code>.pdb</code> files:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb35"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This works for a few, but what if we had thousands?</p>
 </section>
 <section id="save-output-to-a-text-file" class="slide level2">
 <h2>Save output to a text file</h2>
 <p>Let’s send the results to a file with <code>&gt;</code> and read out the contents with <code>cat</code>:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="op">&gt;</span> lengths.txt</span>
-<span id="cb36-2"><a></a><span class="fu">cat</span> lengths.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb36"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="op">&gt;</span> lengths.txt</span>
+<span id="cb36-2"><a></a><span class="fu">cat</span> lengths.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(note that <code>&gt;&gt;</code> will <strong>add to</strong> an existing file)</p>
 </section>
 <section id="sort-the-output" class="slide level2">
 <h2>Sort the output</h2>
 <p>Next, use <code>sort</code> to sort the output, then save it to a file, then finally get the first entry of that file with <code>head</code>:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a></a><span class="fu">sort</span> <span class="at">-n</span> lengths.txt</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a></a><span class="fu">sort</span> <span class="at">-n</span> lengths.txt</span>
 <span id="cb37-2"><a></a><span class="fu">sort</span> <span class="at">-n</span> lengths.txt <span class="op">&gt;</span> sorted-lengths.txt</span>
-<span id="cb37-3"><a></a><span class="fu">head</span> <span class="at">-n</span> 1 sorted-lengths.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb37-3"><a></a><span class="fu">head</span> <span class="at">-n</span> 1 sorted-lengths.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Whew! We did it!</p>
 </section>
 <section id="challenge-appending-data" class="slide level2 smaller">
 <h2>Challenge: Appending Data</h2>
 <p><code>tail</code> is similar to <code>head</code>, but prints lines from the <strong>end of a file instead</strong>.</p>
 <p>Consider the file <code>shell-lesson-data/exercise-data/animal-counts/animals.csv</code>. After these commands, select the answer that corresponds to the file <code>animals-subset.csv</code>:</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a></a><span class="ex">$</span> head <span class="at">-n</span> 3 animals.csv <span class="op">&gt;</span> animals-subset.csv</span>
-<span id="cb38-2"><a></a><span class="ex">$</span> tail <span class="at">-n</span> 2 animals.csv <span class="op">&gt;&gt;</span> animals-subset.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb38"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a></a><span class="ex">$</span> head <span class="at">-n</span> 3 animals.csv <span class="op">&gt;</span> animals-subset.csv</span>
+<span id="cb38-2"><a></a><span class="ex">$</span> tail <span class="at">-n</span> 2 animals.csv <span class="op">&gt;&gt;</span> animals-subset.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li>The first three lines of <code>animals.csv</code></li>
 <li>The last two lines of <code>animals.csv</code></li>
@@ -687,15 +700,15 @@ Documents   Library     Music       Public</code></pre>
 <li><p>So that worked, but it relied on two intermediate text files (<code>lengths.txt</code> and <code>sorted-lengths.txt</code>). That is confusing.</p></li>
 <li><p>We can streamline the analysis by sending the results of one command directly into the input of another with the pipe: <code>|</code></p></li>
 </ul>
-<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb39-1"><a></a><span class="fu">sort</span> <span class="at">-n</span> lengths.txt <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb39"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb39-1"><a></a><span class="fu">sort</span> <span class="at">-n</span> lengths.txt <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="chaining-pipes" class="slide level2">
 <h2>Chaining pipes</h2>
 <ul>
 <li>In fact, we can <strong>combine multiple commands with multiple pipes</strong>. That way we don’t need any intermediate files!</li>
 </ul>
-<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span>
-<span id="cb40-2"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb40"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span>
+<span id="cb40-2"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.pdb <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2">
 
@@ -706,22 +719,22 @@ Documents   Library     Music       Public</code></pre>
 <ul>
 <li>Nelle has run her samples through the assay machines and created 17 files in <code>north-pacific-gyre</code></li>
 </ul>
-<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a></a><span class="bu">cd</span> north-pacific-gyre</span>
-<span id="cb41-2"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb41"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a></a><span class="bu">cd</span> north-pacific-gyre</span>
+<span id="cb41-2"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="nelles-pipeline-checking-files-1" class="slide level2">
 <h2>Nelle’s Pipeline: Checking Files</h2>
 <ul>
 <li>Nelle checks to see if any files are much <strong>shorter</strong> than the others</li>
 </ul>
-<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb42-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb42"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb42-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="nelles-pipeline-checking-files-2" class="slide level2">
 <h2>Nelle’s Pipeline: Checking Files</h2>
 <ul>
 <li>Nelle checks to see if any files are much <strong>longer</strong> than the others</li>
 </ul>
-<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb43"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="pp">*</span>.txt <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code> 300 NENE02040B.txt
  300 NENE02040Z.txt
  300 NENE02043A.txt
@@ -756,16 +769,16 @@ Documents   Library     Music       Public</code></pre>
 <section id="challenge-pipe-reading" class="slide level2 smaller">
 <h2>Challenge: Pipe Reading</h2>
 <p>A file called <code>animals.csv</code> (in the <code>shell-lesson-data/exercise-data/animal-counts</code> folder) contains the following data:</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource source number-lines code-with-copy"><code class="sourceCode"><span id="cb46-1"><a></a>2012-11-05,deer,5</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb46"><pre class="sourceCode numberSource source number-lines code-with-copy"><code class="sourceCode"><span id="cb46-1"><a></a>2012-11-05,deer,5</span>
 <span id="cb46-2"><a></a>2012-11-05,rabbit,22</span>
 <span id="cb46-3"><a></a>2012-11-05,raccoon,7</span>
 <span id="cb46-4"><a></a>2012-11-06,rabbit,19</span>
 <span id="cb46-5"><a></a>2012-11-06,deer,2</span>
 <span id="cb46-6"><a></a>2012-11-06,fox,4</span>
 <span id="cb46-7"><a></a>2012-11-07,rabbit,16</span>
-<span id="cb46-8"><a></a>2012-11-07,bear,1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb46-8"><a></a>2012-11-07,bear,1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>What are the contents of <code>final.txt</code>?</strong> (the <code>sort -r</code> command sorts in reverse)</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a></a><span class="ex">$</span> cat animals.csv <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5 <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 3 <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="op">&gt;</span> final.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb47"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a></a><span class="ex">$</span> cat animals.csv <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5 <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 3 <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="op">&gt;</span> final.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="loops" class="title-slide slide level1 center">
@@ -801,25 +814,25 @@ Documents   Library     Music       Public</code></pre>
 <li>Following lines: DNA sequences</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb48-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 5 basilisk.dat minotaur.dat unicorn.dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb48-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 5 basilisk.dat minotaur.dat unicorn.dat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="using-loops-to-extract-data-1" class="slide level2">
 <h2>Using loops to extract data</h2>
 <p>Our goal: <strong>Print the classification (2nd line) for each file.</strong></p>
 <p>General form of a loop:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb49-1"><a></a><span class="cf">for</span> thing <span class="kw">in</span> list_of_things</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb49"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb49-1"><a></a><span class="cf">for</span> thing <span class="kw">in</span> list_of_things</span>
 <span id="cb49-2"><a></a><span class="cf">do</span></span>
 <span id="cb49-3"><a></a>    <span class="ex">operation_using/command</span> <span class="va">$thing</span></span>
-<span id="cb49-4"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb49-4"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="using-loops-to-extract-data-2" class="slide level2">
 <h2>Using loops to extract data</h2>
 <p>For our situation:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb50-1"><a></a><span class="ex">$</span> for filename in basilisk.dat minotaur.dat unicorn.dat</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb50"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb50-1"><a></a><span class="ex">$</span> for filename in basilisk.dat minotaur.dat unicorn.dat</span>
 <span id="cb50-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb50-3"><a></a><span class="op">&gt;</span>     echo <span class="va">$filename</span></span>
 <span id="cb50-4"><a></a><span class="op">&gt;</span>     head <span class="ex">-n</span> 2 <span class="va">$filename</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 1</span>
-<span id="cb50-5"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb50-5"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>$filename</code> is a <strong>variable</strong> that gets filled in by the shell</p>
 </section>
 <section id="a-few-details" class="slide level2 smaller">
@@ -844,26 +857,26 @@ Documents   Library     Music       Public</code></pre>
 <section id="challenge-variables-in-loops" class="slide level2 smaller">
 <h2>Challenge: Variables in loops</h2>
 <p>This exercise refers to the <code>shell-lesson-data/exercise-data/alkanes</code> directory. <code>ls *.pdb</code> gives the following output:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource output number-lines code-with-copy"><code class="sourceCode"><span id="cb51-1"><a></a>cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb51"><pre class="sourceCode numberSource output number-lines code-with-copy"><code class="sourceCode"><span id="cb51-1"><a></a>cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>What is the output of the following code?</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a></a><span class="ex">$</span> for datafile in <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a></a><span class="ex">$</span> for datafile in <span class="pp">*</span>.pdb</span>
 <span id="cb52-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb52-3"><a></a><span class="op">&gt;</span>     ls <span class="ex">*.pdb</span></span>
-<span id="cb52-4"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb52-4"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now, what is the output of the following code?</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a></a><span class="ex">$</span> for datafile in <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a></a><span class="ex">$</span> for datafile in <span class="pp">*</span>.pdb</span>
 <span id="cb53-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb53-3"><a></a><span class="op">&gt;</span>     ls <span class="va">$datafile</span></span>
-<span id="cb53-4"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb53-4"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Why do these two loops give different outputs?</p>
 </section>
 <section id="challenge-limiting-sets-of-files-12" class="slide level2 smaller">
 <h2>Challenge: Limiting Sets of Files (1/2)</h2>
 <p>What would be the output of running the following loop in the <code>shell-lesson-data/exercise-data/alkanes</code> directory?</p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a></a><span class="ex">$</span> for filename in c<span class="pp">*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a></a><span class="ex">$</span> for filename in c<span class="pp">*</span></span>
 <span id="cb54-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb54-3"><a></a><span class="op">&gt;</span>     ls <span class="va">$filename</span></span>
-<span id="cb54-4"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb54-4"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li>No files are listed.</li>
 <li>All files are listed.</li>
@@ -874,10 +887,10 @@ Documents   Library     Music       Public</code></pre>
 <section id="challenge-limiting-sets-of-files-22" class="slide level2 smaller">
 <h2>Challenge: Limiting Sets of Files (2/2)</h2>
 <p>How would the output differ from using this command instead?</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a></a><span class="ex">$</span> for filename in <span class="pp">*</span>c<span class="pp">*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a></a><span class="ex">$</span> for filename in <span class="pp">*</span>c<span class="pp">*</span></span>
 <span id="cb55-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb55-3"><a></a><span class="op">&gt;</span>     ls <span class="va">$filename</span></span>
-<span id="cb55-4"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb55-4"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li>The same files would be listed.</li>
 <li>All the files are listed this time.</li>
@@ -889,11 +902,11 @@ Documents   Library     Music       Public</code></pre>
 <section id="challenge-saving-to-a-file-in-a-loop-12" class="slide level2 smaller">
 <h2>Challenge Saving to a File in a Loop (1/2)</h2>
 <p>In the <code>shell-lesson-data/exercise-data/alkanes</code> directory, what is the effect of this loop?</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a></a><span class="cf">for</span> alkanes <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a></a><span class="cf">for</span> alkanes <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
 <span id="cb56-2"><a></a><span class="cf">do</span></span>
 <span id="cb56-3"><a></a>    <span class="bu">echo</span> <span class="va">$alkanes</span></span>
 <span id="cb56-4"><a></a>    <span class="fu">cat</span> <span class="va">$alkanes</span> <span class="op">&gt;</span> alkanes.pdb</span>
-<span id="cb56-5"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb56-5"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li>Prints <code>cubane.pdb</code>, <code>ethane.pdb</code>, <code>methane.pdb</code>, <code>octane.pdb</code>, <code>pentane.pdb</code> and <code>propane.pdb</code>, and the text from <code>propane.pdb</code> will be saved to a file called <code>alkanes.pdb</code>.</li>
 <li>Prints <code>cubane.pdb</code>, <code>ethane.pdb</code>, and <code>methane.pdb</code>, and the text from all three files would be concatenated and saved to a file called <code>alkanes.pdb</code>.</li>
@@ -904,10 +917,10 @@ Documents   Library     Music       Public</code></pre>
 <section id="saving-to-a-file-in-a-loop-22" class="slide level2 smaller">
 <h2>Saving to a File in a Loop (2/2)</h2>
 <p>Also in the <code>shell-lesson-data/exercise-data/alkanes</code> directory, what would be the output of the following loop?</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb57-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb57"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb57-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
 <span id="cb57-2"><a></a><span class="cf">do</span></span>
 <span id="cb57-3"><a></a>    <span class="fu">cat</span> <span class="va">$datafile</span> <span class="op">&gt;&gt;</span> all.pdb</span>
-<span id="cb57-4"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb57-4"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li>All of the text from <code>cubane.pdb</code>, <code>ethane.pdb</code>, <code>methane.pdb</code>, <code>octane.pdb</code>, and <code>pentane.pdb</code> would be concatenated and saved to a file called <code>all.pdb</code>.</li>
 <li>The text from <code>ethane.pdb</code> will be saved to a file called <code>all.pdb</code>.</li>
@@ -938,12 +951,12 @@ Documents   Library     Music       Public</code></pre>
 <li>Criteria: Filenames ending in <code>A</code> or <code>B</code>, not <code>Z</code>.</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb58-1"><a></a><span class="ex">$</span> cd</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb58"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb58-1"><a></a><span class="ex">$</span> cd</span>
 <span id="cb58-2"><a></a><span class="ex">$</span> cd Desktop/shell-lesson-data/north-pacific-gyre</span>
 <span id="cb58-3"><a></a><span class="ex">$</span> for datafile in NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt</span>
 <span id="cb58-4"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb58-5"><a></a><span class="op">&gt;</span>     echo <span class="va">$datafile</span></span>
-<span id="cb58-6"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb58-6"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="nelles-pipeline-step-2" class="slide level2">
 <h2>Nelle’s Pipeline, step 2</h2>
@@ -951,22 +964,22 @@ Documents   Library     Music       Public</code></pre>
 <li><p>Next step: decide what to call the files that the <code>goostats.sh</code> analysis program will create.</p></li>
 <li><p>Prefixing each input file’s name with <code>stats</code> seems clear:</p></li>
 </ul>
-<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb59-1"><a></a><span class="ex">$</span> for datafile in NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb59"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb59-1"><a></a><span class="ex">$</span> for datafile in NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt</span>
 <span id="cb59-2"><a></a><span class="op">&gt;</span> do</span>
 <span id="cb59-3"><a></a><span class="op">&gt;</span>     echo <span class="va">$datafile</span> stats-<span class="va">$datafile</span></span>
-<span id="cb59-4"><a></a><span class="op">&gt;</span> done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb59-4"><a></a><span class="op">&gt;</span> done</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="nelles-pipeline-step-3" class="slide level2 smaller">
 <h2>Nelle’s Pipeline, step 3</h2>
 <ul>
 <li>Instead of typing in everything again, press the up arrow key:</li>
 </ul>
-<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb60-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="bu">echo</span> <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb60"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb60-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="bu">echo</span> <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>;</code> has the same effect as a line-break</p>
 <ul>
 <li>Go back into the command with the left-arrow key and edit it:</li>
 </ul>
-<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb61-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="fu">bash</span> goostats.sh <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb61"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb61-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="fu">bash</span> goostats.sh <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="nelles-pipeline-step-4" class="slide level2">
 <h2>Nelle’s Pipeline, step 4</h2>
@@ -975,8 +988,8 @@ Documents   Library     Music       Public</code></pre>
 </ul>
 <div class="fragment">
 <p><code>goostats.sh</code> just writes out the results file without printing anything to the screen. Let’s kill the script with <code>Ctrl + c</code>, then add an <code>echo</code> to display the name of the file:</p>
-<div class="sourceCode" id="cb62"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb62-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="bu">echo</span> <span class="va">$datafile</span><span class="kw">;</span></span>
-<span id="cb62-2"><a></a><span class="fu">bash</span> goostats.sh <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb62"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb62-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> NENE<span class="pp">*</span>A.txt NENE<span class="pp">*</span>B.txt<span class="kw">;</span> <span class="cf">do</span> <span class="bu">echo</span> <span class="va">$datafile</span><span class="kw">;</span></span>
+<span id="cb62-2"><a></a><span class="fu">bash</span> goostats.sh <span class="va">$datafile</span> stats-<span class="va">$datafile</span><span class="kw">;</span> <span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>We can inspect the output by opening another shell window</p>
 </div>
 </section></section>
@@ -1013,9 +1026,9 @@ nano middle.sh</code></pre>
 <section id="first-script-1" class="slide level2">
 <h2>First script</h2>
 <p>Type this in the script (it should look familiar):</p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb64-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 15 octane.pdb <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb64"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb64-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 15 octane.pdb <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now we can run the script:</p>
-<div class="sourceCode" id="cb65"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb65-1"><a></a><span class="fu">bash</span> middle.sh</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb65"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb65-1"><a></a><span class="fu">bash</span> middle.sh</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="using-a-variable-in-a-script" class="slide level2">
 <h2>Using a variable in a script</h2>
@@ -1023,7 +1036,7 @@ nano middle.sh</code></pre>
 <li><p>This script would be much more useful if we could run it on any file, not just <code>octane.pdb</code>.</p></li>
 <li><p>Open it again in <code>nano</code> and modify it like so:</p></li>
 </ul>
-<div class="sourceCode" id="cb66"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb66-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 15 <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb66"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb66-1"><a></a><span class="fu">head</span> <span class="at">-n</span> 15 <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The <code>"$1"</code> means ‘the first filename (or other argument) on the command line’. Try it out!</p>
 </section>
 <section id="about-double-quotes" class="slide level2">
@@ -1037,19 +1050,19 @@ nano middle.sh</code></pre>
 <ul>
 <li>We can make our script even more flexible (and useful) by allowing the user to specify the starting and ending lines:</li>
 </ul>
-<div class="sourceCode" id="cb67"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb67-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$2</span><span class="st">"</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$3</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb67"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb67-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$2</span><span class="st">"</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$3</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>Try it out!</li>
 </ul>
-<div class="sourceCode" id="cb68"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb68-1"><a></a><span class="fu">bash</span> middle.sh pentane.pdb 15 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb68"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb68-1"><a></a><span class="fu">bash</span> middle.sh pentane.pdb 15 5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="challenge-variables-in-shell-scripts" class="slide level2 smaller">
 <h2>Challenge: Variables in Shell Scripts</h2>
 <p>In the <code>alkanes</code> directory, imagine you have a shell script called <code>script.sh</code> containing the following commands:</p>
-<div class="sourceCode" id="cb69"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb69-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="va">$2</span> <span class="va">$1</span></span>
-<span id="cb69-2"><a></a><span class="fu">tail</span> <span class="at">-n</span> <span class="va">$3</span> <span class="va">$1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb69"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb69-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="va">$2</span> <span class="va">$1</span></span>
+<span id="cb69-2"><a></a><span class="fu">tail</span> <span class="at">-n</span> <span class="va">$3</span> <span class="va">$1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>While you are in the <code>alkanes</code> directory, you type the following command:</p>
-<div class="sourceCode" id="cb70"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb70-1"><a></a><span class="ex">$</span> bash script.sh <span class="st">'*.pdb'</span> 1 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb70"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb70-1"><a></a><span class="ex">$</span> bash script.sh <span class="st">'*.pdb'</span> 1 1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Which of the following outputs would you expect to see?</p>
 <ol type="1">
 <li>All of the lines between the first and the last lines of each file ending in <code>.pdb</code> in the <code>alkanes</code> directory</li>
@@ -1063,9 +1076,9 @@ nano middle.sh</code></pre>
 <ul>
 <li>We can make our script easier to understanding by providing some <strong>comments</strong> that explain how it works:</li>
 </ul>
-<div class="sourceCode" id="cb71"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb71-1"><a></a><span class="co"># Select lines from the middle of a file.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb71"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb71-1"><a></a><span class="co"># Select lines from the middle of a file.</span></span>
 <span id="cb71-2"><a></a><span class="co"># Usage: bash middle.sh filename end_line num_lines</span></span>
-<span id="cb71-3"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$2</span><span class="st">"</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$3</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb71-3"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$2</span><span class="st">"</span> <span class="st">"</span><span class="va">$1</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> <span class="st">"</span><span class="va">$3</span><span class="st">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="processing-many-files-in-a-script" class="slide level2">
 <h2>Processing many files in a script</h2>
@@ -1085,24 +1098,24 @@ nano middle.sh</code></pre>
 <ul>
 <li>Example: a script to sort files by their length, called <code>sorted.sh</code></li>
 </ul>
-<div class="sourceCode" id="cb72"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb72-1"><a></a><span class="co"># Sort files by their length.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb72"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb72-1"><a></a><span class="co"># Sort files by their length.</span></span>
 <span id="cb72-2"><a></a><span class="co"># Usage: bash sorted.sh one_or_more_filenames</span></span>
-<span id="cb72-3"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="st">"</span><span class="va">$@</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb72-3"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="st">"</span><span class="va">$@</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-n</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Try it!</p>
-<div class="sourceCode" id="cb73"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb73-1"><a></a><span class="fu">bash</span> sorted.sh <span class="pp">*</span>.pdb ../creatures/<span class="pp">*</span>.dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb73"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb73-1"><a></a><span class="fu">bash</span> sorted.sh <span class="pp">*</span>.pdb ../creatures/<span class="pp">*</span>.dat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="challenge-script-reading" class="slide level2 smaller">
 <h2>Challenge: Script Reading</h2>
 <p>For this question, consider the <code>shell-lesson-data/exercise-data/alkanes</code> directory once again. This contains a number of <code>.pdb</code> files in addition to any other files you may have created. Explain what each of the following three scripts would do when run as <code>bash script1.sh *.pdb</code>, <code>bash script2.sh *.pdb</code>, and <code>bash script3.sh *.pdb</code> respectively.</p>
-<div class="sourceCode" id="cb74"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb74-1"><a></a><span class="co"># Script 1</span></span>
-<span id="cb74-2"><a></a><span class="bu">echo</span> <span class="pp">*</span>.<span class="pp">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb75"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb75-1"><a></a><span class="co"># Script 2</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb74"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb74-1"><a></a><span class="co"># Script 1</span></span>
+<span id="cb74-2"><a></a><span class="bu">echo</span> <span class="pp">*</span>.<span class="pp">*</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb75"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb75-1"><a></a><span class="co"># Script 2</span></span>
 <span id="cb75-2"><a></a><span class="cf">for</span> filename <span class="kw">in</span> <span class="va">$1</span> <span class="va">$2</span> <span class="va">$3</span></span>
 <span id="cb75-3"><a></a><span class="cf">do</span></span>
 <span id="cb75-4"><a></a>    <span class="fu">cat</span> <span class="va">$filename</span></span>
-<span id="cb75-5"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb76"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb76-1"><a></a><span class="co"># Script 3</span></span>
-<span id="cb76-2"><a></a><span class="bu">echo</span> <span class="va">$@</span>.pdb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb75-5"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb76"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb76-1"><a></a><span class="co"># Script 3</span></span>
+<span id="cb76-2"><a></a><span class="bu">echo</span> <span class="va">$@</span>.pdb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="finding-things" class="title-slide slide level1 center">
@@ -1116,23 +1129,23 @@ nano middle.sh</code></pre>
 <li><p><code>grep</code> is a computer program that searches for text</p></li>
 <li><p>Our examples will use haiku about programming that were featured in <em>Salon</em> magazine</p></li>
 </ul>
-<div class="sourceCode" id="cb77"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb77-1"><a></a><span class="bu">cd</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb77"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb77-1"><a></a><span class="bu">cd</span> </span>
 <span id="cb77-2"><a></a><span class="bu">cd</span> Desktop/shell-lesson-data/exercise-data/writing</span>
-<span id="cb77-3"><a></a><span class="fu">cat</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb77-3"><a></a><span class="fu">cat</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="first-grep-example" class="slide level2">
 <h2>First <code>grep</code> example</h2>
 <ul>
 <li>Let’s find lines of text with the word <code>not</code>:</li>
 </ul>
-<div class="sourceCode" id="cb78"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb78-1"><a></a><span class="fu">grep</span> not haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb78"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb78-1"><a></a><span class="fu">grep</span> not haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="matching-whole-words" class="slide level2">
 <h2>Matching whole words</h2>
 <ul>
 <li>What happens when we search for <code>The</code></li>
 </ul>
-<div class="sourceCode" id="cb79"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb79-1"><a></a><span class="fu">grep</span> The haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb79"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb79-1"><a></a><span class="fu">grep</span> The haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <ul>
 <li>It matches <code>Thesis</code>. How can we match only the <strong>whole word</strong> <code>The</code>?
@@ -1147,7 +1160,7 @@ nano middle.sh</code></pre>
 <ul>
 <li>Use quotes</li>
 </ul>
-<div class="sourceCode" id="cb80"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb80-1"><a></a><span class="fu">grep</span> <span class="at">-w</span> <span class="st">"is not"</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb80"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb80-1"><a></a><span class="fu">grep</span> <span class="at">-w</span> <span class="st">"is not"</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <ul>
 <li>Actually, it’s better to use quotes even with single words to make clear what you are searching for vs.&nbsp;the file you are searching</li>
@@ -1156,7 +1169,7 @@ nano middle.sh</code></pre>
 </section>
 <section id="display-matching-line-numbers-with--n" class="slide level2">
 <h2>Display matching line numbers with <code>-n</code></h2>
-<div class="sourceCode" id="cb81"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb81-1"><a></a><span class="fu">grep</span> <span class="at">-n</span> <span class="st">"it"</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb81"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb81-1"><a></a><span class="fu">grep</span> <span class="at">-n</span> <span class="st">"it"</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="combining-options-flags" class="slide level2">
 <h2>Combining options (flags)</h2>
@@ -1165,7 +1178,7 @@ nano middle.sh</code></pre>
 <li><code>-w</code>: Only match whole words</li>
 <li><code>-i</code>: Make search case-insensitive</li>
 </ul>
-<div class="sourceCode" id="cb82"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb82-1"><a></a><span class="fu">grep</span> <span class="at">-n</span> <span class="at">-w</span> <span class="at">-i</span> <span class="st">"the"</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb82"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb82-1"><a></a><span class="fu">grep</span> <span class="at">-n</span> <span class="at">-w</span> <span class="at">-i</span> <span class="st">"the"</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>(you can also combine these into <code>-nwi</code>)</p>
 </section>
 <section id="inversion" class="slide level2">
@@ -1173,14 +1186,14 @@ nano middle.sh</code></pre>
 <ul>
 <li><em>Invert</em> the search (match all <strong>other</strong> lines) with <code>-v</code>:</li>
 </ul>
-<div class="sourceCode" id="cb83"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb83-1"><a></a><span class="fu">grep</span> <span class="at">-nwv</span> <span class="st">"the"</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb83-1"><a></a><span class="fu">grep</span> <span class="at">-nwv</span> <span class="st">"the"</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="recursive-search" class="slide level2">
 <h2>Recursive search</h2>
 <ul>
 <li>Match a string in <strong>multiple</strong> files with <code>-r</code>:</li>
 </ul>
-<div class="sourceCode" id="cb84"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb84-1"><a></a><span class="fu">grep</span> <span class="at">-r</span> <span class="st">"Yesterday"</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb84"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb84-1"><a></a><span class="fu">grep</span> <span class="at">-r</span> <span class="st">"Yesterday"</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="regular-expressions" class="slide level2">
 <h2>Regular expressions</h2>
@@ -1190,12 +1203,12 @@ nano middle.sh</code></pre>
 <li><p>This is one of the most <strong>powerful</strong> features of <code>grep</code></p></li>
 </ul>
 <p>For example, this finds any text with an “o” as the second character (<code>-E</code> turns on matching via regular expressions, the <code>^</code> matches the start of a line, and the <code>.</code> matches any single character):</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb85-1"><a></a> <span class="fu">grep</span> <span class="at">-E</span> <span class="st">"^.o"</span> haiku.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb85"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb85-1"><a></a> <span class="fu">grep</span> <span class="at">-E</span> <span class="st">"^.o"</span> haiku.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="challenge-using-grep" class="slide level2">
 <h2>Challenge: Using <code>grep</code></h2>
 <p>Which command would result in the following output:</p>
-<div class="sourceCode" id="cb86"><pre class="sourceCode numberSource output number-lines code-with-copy"><code class="sourceCode"><span id="cb86-1"><a></a>and the presence of absence:</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb86"><pre class="sourceCode numberSource output number-lines code-with-copy"><code class="sourceCode"><span id="cb86-1"><a></a>and the presence of absence:</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol type="1">
 <li><code>grep "of" haiku.txt</code></li>
 <li><code>grep -E "of" haiku.txt</code></li>
@@ -1209,19 +1222,19 @@ nano middle.sh</code></pre>
 <li>While <code>grep</code> finds lines in files, the <code>find</code> command finds files themselves.</li>
 </ul>
 <p>Try it out from <code>shell-lesson-data/exercise-data</code>:</p>
-<div class="sourceCode" id="cb87"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb87-1"><a></a><span class="fu">find</span> .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb87"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb87-1"><a></a><span class="fu">find</span> .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="find-directories-with--type-d" class="slide level2">
 <h2>Find directories with <code>-type d</code></h2>
-<div class="sourceCode" id="cb88"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb88-1"><a></a><span class="fu">find</span> . <span class="at">-type</span> d</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb88"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb88-1"><a></a><span class="fu">find</span> . <span class="at">-type</span> d</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="find-files-with--type-f" class="slide level2">
 <h2>Find files with <code>-type f</code></h2>
-<div class="sourceCode" id="cb89"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb89-1"><a></a><span class="fu">find</span> . <span class="at">-type</span> f</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb89"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb89-1"><a></a><span class="fu">find</span> . <span class="at">-type</span> f</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="find-files-matching-a-particular-name-with--name" class="slide level2">
 <h2>Find files matching a particular name with <code>-name</code></h2>
-<div class="sourceCode" id="cb90"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb90-1"><a></a><span class="fu">find</span> . <span class="at">-name</span> <span class="pp">*</span>.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb90"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb90-1"><a></a><span class="fu">find</span> . <span class="at">-name</span> <span class="pp">*</span>.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p>Wait a sec - I thought there were more text files?</p>
 <ul>
@@ -1237,14 +1250,14 @@ nano middle.sh</code></pre>
 <ul>
 <li>We need to prevent the shell from expanding the names of files by putting that part in quotes</li>
 </ul>
-<div class="sourceCode" id="cb91"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb91-1"><a></a><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb91"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb91-1"><a></a><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="combining-wc-and-find" class="slide level2">
 <h2>Combining <code>wc</code> and <code>find</code></h2>
 <ul>
 <li>Let’s count lines of text in <code>.txt</code> files:</li>
 </ul>
-<div class="sourceCode" id="cb92"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb92-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="va">$(</span><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span><span class="va">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb92"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb92-1"><a></a><span class="fu">wc</span> <span class="at">-l</span> <span class="va">$(</span><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span><span class="va">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li>The code in parenthesis gets run first</li>
 </ul>
@@ -1254,7 +1267,7 @@ nano middle.sh</code></pre>
 <ul>
 <li>Let’s find txt files that contain the word “searching” by looking for the string ‘searching’ in all the <code>.txt</code> files in the current directory:</li>
 </ul>
-<div class="sourceCode" id="cb93"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb93-1"><a></a><span class="fu">grep</span> <span class="st">"searching"</span> <span class="va">$(</span><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span><span class="va">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb93"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb93-1"><a></a><span class="fu">grep</span> <span class="st">"searching"</span> <span class="va">$(</span><span class="fu">find</span> . <span class="at">-name</span> <span class="st">"*.txt"</span><span class="va">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="the-power-of-small-programs-together" class="slide level2">
 <h2>The power of small programs together</h2>
@@ -1464,7 +1477,7 @@ nano middle.sh</code></pre>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1538,13 +1551,14 @@ nano middle.sh</code></pre>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

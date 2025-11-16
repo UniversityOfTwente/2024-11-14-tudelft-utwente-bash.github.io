@@ -273,11 +273,11 @@
     "text": "find Pipeline Reading Comprehension\nWrite a short explanatory comment for the following shell script:\nwc -l $(find . -name \"*.dat\") | sort -n"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "objectID": "index.html#overall-picture",
+    "href": "index.html#overall-picture",
+    "title": "software.carpintery.shell.nestor.github.io",
+    "section": "Overall picture",
+    "text": "Overall picture\n\n\n\n\nExample: Computational usability and reproducibility"
   },
   {
     "objectID": "index.html#example-data",
@@ -1048,5 +1048,12 @@
     "title": "software.carpintery.shell.nestor.github.io",
     "section": "Challenge: Matching and Subtracting",
     "text": "Challenge: Matching and Subtracting\nRemember, the -v option to grep inverts pattern matching, so that only lines which do not match the pattern are printed. Given that, which of the following commands will find all .dat files in creatures except unicorn.dat? Once you have thought about your answer, you can test the commands in the shell-lesson-data/exercise-data directory.\n\nfind creatures -name \"*.dat\" | grep -v unicorn\nfind creatures -name *.dat | grep -v unicorn\ngrep -v \"unicorn\" $(find creatures -name \"*.dat\")\nNone of the above."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
