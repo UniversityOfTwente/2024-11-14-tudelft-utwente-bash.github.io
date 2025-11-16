@@ -9,12 +9,25 @@ execute:
 
 # The Unix Shell
 
-[SWC @ University of Twente (General information)](https://4turesearchdata-carpentries.github.io/2025-05-19-tudelft/)
+[SWC @ University of Twente (General information)](https://4turesearchdata-carpentries.github.io/2025-11-17-tudelft-SWC/)
 
-May 19 2025, 09:00-14:00 CEST
+Nov 17 2025, 09:00-14:00 CEST
 
 Néstor DelaPaz-Ruíz
 
+## Overall picture
+
+::: {.video}
+<iframe width="100%" height="500"
+  src="https://www.youtube.com/embed/s3JldKoA0zw"
+  allowfullscreen></iframe>
+:::
+
+Example: Computational usability and reproducibility
+
+# [Banner - Publishing code as open-source](https://universiteittwente.sharepoint.com/:b:/s/Researchsoftwarepolicy/IQDQgAO2GtWdRqNyk-YT6ATbARTDlqXsaXAIGd6sJAHNe4I?e=LXlWwa)
+
+Please consider providing feedback (UT credentials required)
 
 # [Credits](https://github.com/joelnitta/2024-05-27-tudelft-online-bash)
 
